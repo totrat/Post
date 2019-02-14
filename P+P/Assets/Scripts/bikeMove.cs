@@ -10,7 +10,7 @@ public class bikeMove : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void FixedUpdate() {
         if (speed < 0)
             speed = 0;
         if (Input.GetKey(KeyCode.UpArrow))
@@ -27,5 +27,6 @@ public class bikeMove : MonoBehaviour {
             this.transform.Rotate(new Vector3(0,-1f,0));
         if (Input.GetKey(KeyCode.LeftArrow))
             this.transform.Rotate(new Vector3(0,1f,0));
+        
     }
 }

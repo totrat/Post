@@ -10,7 +10,7 @@ public class playertarget : MonoBehaviour {
 	}
     public GameObject bike;
 	// Update is called once per frame
-	void Update () {
+	void FixedUpdate() {
         transform.LookAt(bike.transform);
 	}
 }

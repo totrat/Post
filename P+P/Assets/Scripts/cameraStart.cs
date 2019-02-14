@@ -5,12 +5,12 @@ using UnityEngine;
 public class cameraStart : MonoBehaviour { 
 	// Use this for initialization
 	void Start () {
-        Vector3 bike = GameObject.Find("bike").transform.position;
-        GameObject.Find("fmcamera").transform.position = new Vector3(bike.x, bike.y, bike.z);
+       
     }
 	
 	// Update is called once per frame
-	void Update () {
-		
-	}
+	void FixedUpdate() {
+        Vector3 bike = GameObject.Find("bike").transform.position;
+        GameObject.Find("fmcamera").transform.position = new Vector3(bike.x, bike.y +70, bike.z - 100);
+    }
 }
