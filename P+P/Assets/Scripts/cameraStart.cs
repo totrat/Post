@@ -11,6 +11,6 @@ public class cameraStart : MonoBehaviour {
 	// Update is called once per frame
 	void FixedUpdate() {
         Vector3 bike = GameObject.Find("bike").transform.position;
-        GameObject.Find("fmcamera").transform.position = new Vector3(bike.x, bike.y +70, bike.z - 100);
+        GameObject.Find("fmcamera").transform.position = new Vector3(bike.x-100, bike.y +70, bike.z);
     }
 }
